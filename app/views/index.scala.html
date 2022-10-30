@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Alexander Dimitrov</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href='@routes.Assets.versioned("stylesheets/map.css")'>
+
+
+</head>
+
+<body>
+<!-- partial:index.partial.html -->
+<section class="fullwidth-map">
+	<div class="map-wrapper-row">
+		<header class="section-header">
+			<h2 class="header-title">Example map header title</h2>
+			<p class="header-subtitle">More text under the example header title that will fill in this area.</p>
+		</header>
+		
+		<div class="map-pins-component">
+			<div class="map-pin pin pin-location-na">
+				<div class="pin-label"><span>North America</span></div>
+				<img class="pin-icon" src="http://svgshare.com/i/3G4.svg">
+				
+				<div class="pin-popup">
+					<header class="pin-popup-header"><h3>North America</h3></header>
+					<ul>
+						<li><a href="#">Example location</a></li>
+						<li><a href="#">Example location</a></li>
+						<li><a href="#">Example location</a></li>
+						<li><a href="#">Example location</a></li>
+						<li><a href="#">Example location</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="map-pin pin pin-location-sa">
+				<div class="pin-label"><span>South America</span></div>
+				<img class="pin-icon" src="http://svgshare.com/i/3G4.svg">
+				
+				<div class="pin-popup"></div>
+			</div>
+			
+			<div class="map-pin pin pin-location-eu">
+				<div class="pin-label"><span>Europe</span></div>
+				<img class="pin-icon" src="http://svgshare.com/i/3G4.svg">
+				
+				<div class="pin-popup"></div>
+			</div>
+			
+			<div class="map-pin pin pin-location-africa">
+				<div class="pin-label"><span>Africa</span></div>
+				<img class="pin-icon" src="http://svgshare.com/i/3G4.svg">
+				
+				<div class="pin-popup"></div>
+			</div>
+			
+			<div class="map-pin pin pin-location-asia">
+				<div class="pin-label"><span>Asia</span></div>
+				<img class="pin-icon" src="http://svgshare.com/i/3G4.svg">
+				
+				<div class="pin-popup"></div>
+			</div>
+									  
+			<div class="map-pin pin pin-location-aus">
+				<div class="pin-label"><span>Austraila</span></div>
+				<img class="pin-icon" src="http://svgshare.com/i/3G4.svg">
+				
+				<div class="pin-popup"></div>
+			</div>
+			
+			<img class="map-image" src="http://svgshare.com/i/3GQ.svg" alt="">
+		</div>
+	</div>
+</section>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='@routes.Assets.versioned("javascripts/map.js")'></script>
+
+</body>
+</html>
