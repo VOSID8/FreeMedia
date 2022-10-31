@@ -75,29 +75,21 @@ body {
   font-weight: bold;
   letter-spacing: 2px;
 }
-.map-pins-component .pin-location-na {
+.map-pins-component .pin-location-usa {
   left: 10%;
-  top: 12%;
+  top: 13%;
 }
-.map-pins-component .pin-location-sa {
-  left: 20%;
-  top: 50%;
+.map-pins-component .pin-location-uk {
+  left: 42%;
+  top: 3%;
 }
-.map-pins-component .pin-location-eu {
-  left: 45%;
-  top: 5%;
-}
-.map-pins-component .pin-location-africa {
-  left: 50%;
-  top: 35%;
-}
-.map-pins-component .pin-location-asia {
-  left: 70%;
-  top: 10%;
+.map-pins-component .pin-location-india {
+  left: 67%;
+  top: 26%;
 }
 .map-pins-component .pin-location-aus {
   left: 85%;
-  top: 60%;
+  top: 63%;
 }
 .map-pins-component .pin-popup {
   background: black;

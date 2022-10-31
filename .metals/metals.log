@@ -23,3 +23,59 @@
 2022.10.31 01:43:54 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\HomeController.scala
 2022.10.31 01:44:21 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
 2022.10.31 02:47:29 INFO  shutting down Metals
+2022.10.31 12:55:18 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Projects\FreeMedia\FreeMedia\.metals\lsp.trace.json or C:\Users\Siddh\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.10.31 12:55:19 INFO  logging to file C:\Projects\FreeMedia\FreeMedia\.metals\metals.log
+2022.10.31 12:55:19 INFO  Started: Metals version 0.11.9 in workspace 'C:\Projects\FreeMedia\FreeMedia' for client Visual Studio Code 1.72.2.
+2022.10.31 12:55:22 INFO  time: initialize in 3.07s
+2022.10.31 12:55:23 WARN  Build server is not auto-connectable.
+2022.10.31 12:55:23 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 12:55:26 INFO  no build target found for C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala. Using presentation compiler with project's scala-library version: 3.2.0
+2022.10.31 12:55:30 INFO  time: code lens generation in 5.93s
+2022.10.31 13:01:56 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\models\TaskListInMemoryModel.scala
+Exception in thread "pool-3-thread-1" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2022.10.31 13:02:41 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\models\TaskListInMemoryModel.scala
+2022.10.31 13:30:13 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 13:30:14 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 13:30:16 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 13:46:07 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 13:46:10 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 13:51:23 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 13:52:42 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\HomeController.scala
+2022.10.31 14:00:27 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 14:00:30 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 14:00:33 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+Oct 31, 2022 2:00:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 270
+2022.10.31 14:00:37 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 14:00:39 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 14:00:44 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 14:00:52 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 14:00:54 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 14:01:02 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 14:01:05 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 14:01:55 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 14:01:57 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 14:02:13 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 14:02:21 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 14:03:06 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 14:03:41 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\models\TaskListInMemoryModel.scala
+2022.10.31 14:29:20 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 14:41:26 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 14:41:53 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 14:41:55 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+Oct 31, 2022 2:47:13 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2022.10.31 15:07:33 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 15:07:39 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 15:07:49 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 15:07:55 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.10.31 15:59:32 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
