@@ -2,6 +2,7 @@ package controllers
 
 import javax.inject._
 
+import play.api._
 import play.api.mvc._
 import play.api.i18n._
 import models.TaskListInMemoryModel
@@ -32,7 +33,7 @@ class base @Inject() (cc: MessagesControllerComponents) extends MessagesAbstract
       val username = args("username").head
       val password = args("password").head
       if (TaskListInMemoryModel.validateUser(username,password)) {
-        Redirect(routes.base.world).withSession("username" -> username)
+        Ok(views.html.index(username)).withSession("username" -> username)
       } else{
         Redirect(routes.base.validateLoginPost).flashing("error" -> "Invalid password/username combination")
       }
@@ -48,7 +49,7 @@ class base @Inject() (cc: MessagesControllerComponents) extends MessagesAbstract
       val username = args("username").head
       val password = args("password").head
       if (TaskListInMemoryModel.createUser(username, password)) {
-        Redirect(routes.base.world).withSession("username" -> username)
+        Ok(views.html.index(username)).withSession("username" -> username)
       } else {
         Redirect(routes.base.validateLoginPost)
       }
@@ -57,8 +58,8 @@ class base @Inject() (cc: MessagesControllerComponents) extends MessagesAbstract
   //flash stays up for one call, it goes away after that
   // so basically, request me store horha hai and username me stored tha usernameOption so get it?
 
-  def world = Action { implicit requset =>
-      Ok(views.html.index())
+  def world(username: String) = Action { implicit requset =>
+      Ok(views.html.index(username)).withSession("username" -> username)
     }
 
   // def addTask = Action { implicit request =>
@@ -76,6 +77,8 @@ class base @Inject() (cc: MessagesControllerComponents) extends MessagesAbstract
   def product(prodType: String, prodNum: Int) = Action{
     Ok(s"Product Type is: $prodType, product number is: $prodNum")
   }
+
+
 
 //  def deleteTask = Action { implicit request =>
 //   val usernameOption = request.session.get("username")
