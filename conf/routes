@@ -5,8 +5,15 @@ POST    /login                      controllers.base.validateLoginPost
 +nocsrf
 POST    /createUser1                controllers.base.createUser
 
-# +nocsrf
-# POST    /usa                        controllers.base.usa
+
+GET     /chatSocket                 controllers.base.socket
+
++nocsrf
+POST     /freemedia                       controllers.base.freemedia
+
+GET     /world                      controllers.base.world
+
+GET     /freemedia                          controllers.base.freemedia
 # +nocsrf
 # POST    /addTask1                   controllers.TaskList1.addTask
 # +nocsrf
