@@ -1,20 +1,27 @@
 package controllers
 
 import javax.inject._
-
+import play.api.libs.json.Json
 import play.api._
 import play.api.mvc._
 import play.api.i18n._
 import models.TaskListInMemoryModel
 import play.api.data._
 import play.api.data.Forms._
+import play.api.libs.json._
+import akka.actor.Actor
+import play.api.libs.streams.ActorFlow
+import akka.actor.ActorSystem
+import akka.stream.Materializer
+import actors.ChatActor
+import akka.actor.Props
+import actors.ChatManager
 
 case class LoginData(username: String, password: String)
 
 
-
 @Singleton
-class base @Inject() (cc: MessagesControllerComponents) extends MessagesAbstractController(cc) {
+class base @Inject() (cc: MessagesControllerComponents)(implicit system: ActorSystem, mat: Materializer) extends MessagesAbstractController(cc) {
   val loginForm = Form(mapping(
     "Username" -> text(3, 10),
     "Password" -> text(8))(LoginData.apply)(LoginData.unapply))
@@ -58,70 +65,64 @@ class base @Inject() (cc: MessagesControllerComponents) extends MessagesAbstract
   //flash stays up for one call, it goes away after that
   // so basically, request me store horha hai and username me stored tha usernameOption so get it?
 
-  def world(username: String) = Action { implicit requset =>
-      Ok(views.html.index(username)).withSession("username" -> username)
+  def world = Action { implicit requset =>
+      Ok("hi")
     }
 
-  // def addTask = Action { implicit request =>
-    // val usernameOption = request.session.get("username")
-    // usernameOption.map { username =>
-      // val postVals = request.body.asFormUrlEncoded
-      // postVals.map { args =>
-        // val task = args("newTask").head
-        // TaskListInMemoryModel.addTask(username, task);
-        // Redirect(routes.TaskList1.taskList)
-      // }.getOrElse(Redirect(routes.TaskList1.world))
-    // }.getOrElse(Redirect(routes.TaskList1.login))
-  // }
+
 
   def product(prodType: String, prodNum: Int) = Action{
     Ok(s"Product Type is: $prodType, product number is: $prodNum")
   }
 
-
-
-//  def deleteTask = Action { implicit request =>
-//   val usernameOption = request.session.get("username")
-    // usernameOption.map { username =>
-      // val postVals = request.body.asFormUrlEncoded
-      // postVals.map { args =>
-        // val index = args("index").head.toInt
-        // type casting babyyy
-        // TaskListInMemoryModel.removeTask(username, index);
-        // Redirect(routes.TaskList1.taskList)
-      // }.getOrElse(Redirect(routes.TaskList1.world))
-    // }.getOrElse(Redirect(routes.TaskList1.login))
+  // def usa = Action {implicit request =>
+  // val usernameOption = request.session.get("username")
+  // usernameOption.map { username =>
+    // Ok(views.html.usa(username)).withSession("username" -> username)
+  // }.getOrElse {Ok("Failed")}
   // }
+
+
+
+  val manager = system.actorOf(Props[ChatManager], "Manager")
+
+
+  def socket = WebSocket.accept[String, String] { request =>
+    ActorFlow.actorRef { out =>
+      ChatActor.props(out, manager)
+    }
+  }
 
 
   def logout = Action {
     Redirect(routes.base.validateLoginPost).withNewSession
   }
 
-//  def validateLoginForm = Action { implicit request =>
-//    loginForm.bindFromRequest.fold(
-//      formWithErrors => BadRequest(views.html.login1(formWithErrors)),
-//      ld =>
-//        if (TaskListInMemoryModel.validateUser(ld.username, ld.password)) {
-//          Redirect(routes.TaskList1.taskList).withSession("username" -> ld.username)
-//        } else {
-//          Redirect(routes.TaskList1.login).flashing("error" -> "Invalid password/username combination")
-//        }
-//    )
-//
-//  }
-
-  // def createUserForm = Action { implicit request =>
-    // loginForm.bindFromRequest.fold(
-      // formWithErrors => BadRequest(views.html.login1(formWithErrors)),
-      // ld =>
-        // if (TaskListInMemoryModel.createUser(ld.username, ld.password)) {
-          // Redirect(routes.TaskList1.taskList).withSession("username" -> ld.username)
-        // } else {
-          // Redirect(routes.TaskList1.login).flashing("error" -> "User creation failed.")
-        // })
-  // }
-
+  def freemedia = Action{ implicit request =>
+    val postVals = request.body.asFormUrlEncoded
+    postVals.map { args =>
+      val country = args("country").head
+      val username = args("username").head
+      Ok(views.html.media(country,username)).withSession("country" -> country)
+      //      ok so routes. kerke uske aage ka ager link kisise match hota hai toh cool verna compile error
+      //      Ager toh shi rha toh tashList daaldenge verna login wapas
+      //      Ok(s"$username logged in with $password")
+    }.getOrElse(Ok("wtf"))
+  }
 
 
 }
+
+        //val json = request.body.asJson.get
+        //val selectedVal = (json \ "selectedvalue").as[String]
+        //val username = (json \ "username").as[String]
+        //val selectedVal = request.session.get("country")
+        //val username = "Mark"
+        //println(selectedVal)
+        //println(username)
+        // selectedVal.map { selectedVal =>
+          // Ok(views.html.media(username, selectedVall)).withSession("username" -> username, "selectedvalue" -> selectedVall);
+        // };
+        //Ok("hi")
+        
+        //Ok(views.html.media(selectedVal, username)).withSession("country" -> selectedVal)
