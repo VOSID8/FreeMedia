@@ -672,3 +672,116 @@ WARNING: Unmatched cancel notification for request id 2835
 2022.11.02 16:28:39 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
 2022.11.02 21:42:44 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
 2022.11.02 21:42:52 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2022.11.03 01:01:32 INFO  shutting down Metals
+2023.03.25 23:14:37 INFO  Started: Metals version 0.11.11 in workspace 'C:\Projects\FreeMedia\FreeMedia' for client Visual Studio Code 1.76.2.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/Siddh/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.03.25 23:14:39 INFO  time: initialize in 1.31s
+2023.03.25 23:14:39 WARN  Build server is not auto-connectable.
+2023.03.25 23:18:43 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\build.sbt
+2023.03.25 23:18:45 INFO  no build target found for C:\Projects\FreeMedia\FreeMedia\build.sbt. Using presentation compiler with project's scala-library version: 3.2.2
+2023.03.25 23:18:47 INFO  time: code lens generation in 3.44s
+2023.03.25 23:20:20 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\project\plugins.sbt
+2023.03.25 23:35:05 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\HomeController.scala
+2023.03.25 23:35:18 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+Mar 25, 2023 11:35:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 30
+Mar 25, 2023 11:35:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 35
+Mar 26, 2023 12:11:08 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Mar 26, 2023 12:22:24 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 67
+2023.03.26 00:23:20 INFO  Shutting down server
+2023.03.26 00:23:20 INFO  shutting down Metals
+2023.03.26 00:46:37 INFO  Started: Metals version 0.11.11 in workspace 'C:\Projects\FreeMedia\FreeMedia' for client Visual Studio Code 1.76.2.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/Siddh/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.03.26 00:46:43 INFO  time: initialize in 6.08s
+2023.03.26 00:46:46 WARN  Build server is not auto-connectable.
+2023.03.26 00:46:46 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2023.03.26 00:46:51 INFO  no build target found for C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.03.26 00:46:57 INFO  time: code lens generation in 4.82s
+Mar 26, 2023 2:17:16 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.03.26 02:38:01 INFO  Shutting down server
+2023.03.26 02:38:01 INFO  shutting down Metals
+2023.03.26 02:38:02 INFO  Exiting server
+2023.03.26 09:29:53 INFO  Started: Metals version 0.11.11 in workspace 'C:\Projects\FreeMedia\FreeMedia' for client Visual Studio Code 1.76.2.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/Siddh/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.03.26 09:29:54 INFO  time: initialize in 0.83s
+2023.03.26 09:29:54 WARN  Build server is not auto-connectable.
+2023.03.26 12:03:13 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\actors\ChatActor.scala
+2023.03.26 12:03:15 INFO  no build target found for C:\Projects\FreeMedia\FreeMedia\app\actors\ChatActor.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.03.26 12:03:17 INFO  time: code lens generation in 3.18s
+2023.03.26 17:19:56 INFO  Shutting down server
+2023.03.26 17:19:56 INFO  shutting down Metals
+2023.03.26 17:19:56 INFO  Exiting server
+2023.03.26 19:34:44 INFO  Started: Metals version 0.11.11 in workspace 'C:\Projects\FreeMedia\FreeMedia' for client Visual Studio Code 1.76.2.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/Siddh/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.03.26 19:34:45 INFO  time: initialize in 0.68s
+2023.03.26 19:34:45 WARN  Build server is not auto-connectable.
+2023.03.26 19:35:08 INFO  Shutting down server
+2023.03.26 19:35:08 INFO  shutting down Metals
+2023.03.26 19:35:08 INFO  Exiting server
+2023.03.27 11:10:03 INFO  Started: Metals version 0.11.11 in workspace 'C:\Projects\FreeMedia\FreeMedia' for client Visual Studio Code 1.76.2.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/Siddh/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.03.27 11:10:04 INFO  time: initialize in 1.27s
+2023.03.27 11:10:05 WARN  Build server is not auto-connectable.
+2023.03.27 11:31:57 INFO  Shutting down server
+2023.03.27 11:31:57 INFO  shutting down Metals
+2023.03.27 11:31:57 INFO  Exiting server
+2023.03.27 21:14:45 INFO  Started: Metals version 0.11.11 in workspace 'C:\Projects\FreeMedia\FreeMedia' for client Visual Studio Code 1.76.2.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/Siddh/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.03.27 21:14:46 INFO  time: initialize in 1.31s
+2023.03.27 21:14:47 WARN  Build server is not auto-connectable.
+2023.03.27 21:15:47 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\HomeController.scala
+2023.03.27 21:15:50 INFO  no build target found for C:\Projects\FreeMedia\FreeMedia\app\controllers\HomeController.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.03.27 21:15:51 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2023.03.27 21:15:55 INFO  time: code lens generation in 7.53s
+2023.03.27 21:15:55 INFO  time: code lens generation in 3.8s
+2023.03.28 00:25:21 INFO  Shutting down server
+2023.03.28 00:25:21 INFO  shutting down Metals
+2023.03.28 00:25:22 INFO  Exiting server
+2023.04.01 16:59:09 INFO  Started: Metals version 0.11.11 in workspace 'C:\Projects\FreeMedia\FreeMedia' for client Visual Studio Code 1.77.0.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/Siddh/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.04.01 16:59:11 INFO  time: initialize in 1.95s
+2023.04.01 16:59:11 WARN  Build server is not auto-connectable.
+2023.04.01 16:59:11 WARN  no build target for: C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala
+2023.04.01 16:59:17 INFO  no build target found for C:\Projects\FreeMedia\FreeMedia\app\controllers\base.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.04.01 16:59:21 INFO  time: code lens generation in 7.35s
+2023.04.01 17:02:06 INFO  Shutting down server
+2023.04.01 17:02:06 INFO  shutting down Metals

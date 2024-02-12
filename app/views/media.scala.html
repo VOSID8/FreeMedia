@@ -6,9 +6,10 @@
     <link rel="stylesheet" href='@routes.Assets.versioned("stylesheets/chat.css")'>
 </head>
 <body>
-    <div class="main-header">You are at @country</div>
+    <div class="main-header">@country Chat and Free Media</div>
     <br>
-    <input type="button" class="load" onclick='load("@country")' value="Load the FreeMedia">
+    <input type="button" class="load" onclick='load("@country")' value="Load Live TVs">
+    <a type="button" class="load" href="http://localhost:8090/">Open Web Crawler</a>
 
 <div hidden id="uk" class="layout">
     <a href="https://www.youtube.com/watch?v=9Auq9mYxFEE">Sky News</a>
@@ -51,11 +52,10 @@
     <br>
     <textarea id="chat-area" rows="40" cols="80"></textarea>
 </div>
-
-
-
-
+    
     <script src='@routes.Assets.versioned("javascripts/chat.js")'></script>
+
+    
 </body>
 </html>
 
